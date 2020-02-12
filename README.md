@@ -77,7 +77,7 @@ make
 sudo make install
 ```
 
-![Inteface Alfa AWUS036ACH](images/AWUS036ACH.jpg)
+![Inteface Alfa AWUS036ACH](images/AWUS036ACH.JPG)
 *Inteface Alfa AWUS036ACH*
 
 
