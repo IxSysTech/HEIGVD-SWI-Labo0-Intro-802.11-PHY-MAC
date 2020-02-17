@@ -16,13 +16,13 @@ __Il est fortement conseillé d'employer une distribution Kali__ (on ne pourra p
 
 # Capture de trafic
 
-A difference d'autres laboratoires, il peut être difficile de faire vos propres captures à cause de différentes raisons. Le problème principal c'est la carence de drivers Windows capables de capturer des trames ou niveau 802.11. 
+A difference d'autres laboratoires que vous avez fait dans le passé, il peut être difficile de faire vos propres captures quand il s'agit de WiFi, à cause de différentes raisons. Le problème principal c'est la carence de drivers Windows capables de capturer des trames ou niveau 802.11. 
 
 Dans certains systèmes tel que Mac et Linux, il est possible de demander au système d'exploitation d'accepter les trames 802.11 directement. Ceci est appelé, "Monitor mode". Si votre système supporte ce mode, vous pourrez capturer directement les trames "802.11 plus radiotap header" dans Wireshark (options de capture).
 
 Une deuxième difficulté c'est le fait qu'une interface qui capture en mode monitor, n'est souvent pas disponible pour une utilisation régulière. Ceci veut dire qu'il vous faut deux interfaces (ou deux machines), une pour générer du trafic et l'autre pour capturer l'activité sans-fil.
 
-Une troisième difficulté vient du fait qu'une interface 802.11 pas associée à un réseau, saute de canal en canal de manière aléatoire. Vous devez donc vous assurer de fixer l'interface sur le bon canal. 
+Une troisième difficulté vient du fait qu'une interface 802.11 pas associée à un réseau, saute de canal en canal de manière aléatoire. Vous devez donc vous assurer de fixer l'interface sur le bon canal, ce qui peut varier en fonction de l'interface, le driver, etc.
 
 Enfin, notez qu'une capture en mode moniteur permet d'enregistrer toute activité sans-fil à proximité. Puisque les appareils sans-fil 802.11 sont omniprésents, il est probable que votre trace capturera le trafic indésirable d'autres ordinateurs situés à proximité. Ce comportement rend difficile l'observation de votre propre trafic.
 
