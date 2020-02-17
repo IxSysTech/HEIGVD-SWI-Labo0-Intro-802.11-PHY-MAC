@@ -46,6 +46,13 @@ Vous retrouverez ensuite une nouvelle interface ```wlan0mon``` qui fonctionne en
 ![Inteface Alfa AWUS051NH](images/AWUS051NH.jpg)
 *Inteface Alfa AWUS051NH*
 
+Si vous avez un message d'erreur (peut arrive avec les versions plus récentes de Kali), il vous faut le firmware de l'interface Alfa. Pour cela, tapez les commandes suivantes :
+
+```bash
+sudo apt update
+sudo apt install firmware-misc-nonfree
+```
+
 Si vous utilisez les interfaces Alfa __AWUS036ACH__ (interfaces noires), il faudra faire les manipulations suivantes pour les configurer en mode monitor. __ATTENTION, utilisez les commandes suivantes uniquement si vous utilisez les interfaces AWUS036ACH__ :
 
 ### Installer le driver (disponible sur Kali. Pour d'autres distributions, il faudra probablement le compiler à partir des sources) :
@@ -88,6 +95,8 @@ sudo make install
 Après avoir configuré votre interface en mode monitor, lancez une capture avec Wireshark et arrêtez-la après quelques secondes. Vous trouverez quelque chose qui ressemble à ceci :
 
 ![Capture](images/capture.png)
+
+Si vous n'arrivez pas à capturer vous même, vous pouvez [télécharger un fichier de capture](files/Capture.pcap). Il est pourtant fortement conseillé de faire fonctionner le Monitor mode maintenant. Ce sera indispensable pour les laboratoires suivants.
 
 On va jeter an oeil au format de la trame 802.11. Il y a plusieurs types de trames 802.11 qui seront capturées. Le champ "Info" décrit le type, tel que Beacon, Data, etc.
 
