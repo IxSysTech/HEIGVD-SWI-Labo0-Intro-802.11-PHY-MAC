@@ -53,7 +53,7 @@ sudo apt update
 sudo apt install firmware-misc-nonfree
 ```
 
-Si vous utilisez les interfaces Alfa __AWUS036ACH__ (interfaces noires), il faudra faire les manipulations suivantes pour les configurer en mode monitor. __ATTENTION, utilisez les commandes suivantes uniquement si vous utilisez les interfaces AWUS036ACH__ :
+Si vous utilisez les interfaces Alfa __AWUS036ACH__ (interfaces noires), et que la méthode précédente ne fonctionne pas, il faudra faire les manipulations suivantes pour les configurer en mode monitor. __ATTENTION, utilisez les commandes suivantes uniquement si vous utilisez les interfaces AWUS036ACH__ :
 
 ### Installer le driver (disponible sur Kali. Pour d'autres distributions, il faudra probablement le compiler à partir des sources) :
 
